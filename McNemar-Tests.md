@@ -10,9 +10,7 @@ output:
     toc_float: true
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
 
 
 ## Codes for McNemar tests
@@ -21,13 +19,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## General McNemar Format
 
-```{r, error = TRUE, eval = FALSE}
+
+```r
 OwlSpecies <- matrix(c(cw,co,pw,po),
               nrow = 2,
               dimnames = list("Current" = c("Within", "Outside"), "Projected" = c("Within", "Outside")))
 
 mcnemar.test(OwlSpecies)
-
 ```
 
 ## Data and specific codes, McNemar test of paired proportions (2 groups)
@@ -115,82 +113,233 @@ mcnemar.test(OwlSpecies)
 
 1. **Boreal Owl**
 
-```{r}
+
+```r
 BorealOwl1 <- matrix(c(14,0,6,0), 
                      nrow = 2,
                      dimnames = list("Current" = c("Within", "Outside"), "Projected" = c("Within", "Outside")))
 
 print(BorealOwl1)
+```
+
+```
+##          Projected
+## Current   Within Outside
+##   Within      14       6
+##   Outside      0       0
+```
+
+```r
 mcnemar.test(BorealOwl1)
+```
+
+```
+## 
+## 	McNemar's Chi-squared test with continuity correction
+## 
+## data:  BorealOwl1
+## McNemar's chi-squared = 4.1667, df = 1, p-value = 0.04123
 ```
 2. **Flammulated Owl**
 
-```{r}
+
+```r
 FlammulatedOwl1 <- matrix(c(114,0,164,13), 
                           nrow = 2,
                           dimnames = list("Current" = c("Within", "Outside"), "Projected" = c("Within", "Outside")))
 
 print(FlammulatedOwl1)
-mcnemar.test(FlammulatedOwl1)
+```
 
+```
+##          Projected
+## Current   Within Outside
+##   Within     114     164
+##   Outside      0      13
+```
+
+```r
+mcnemar.test(FlammulatedOwl1)
+```
+
+```
+## 
+## 	McNemar's Chi-squared test with continuity correction
+## 
+## data:  FlammulatedOwl1
+## McNemar's chi-squared = 162.01, df = 1, p-value < 2.2e-16
 ```
 3. **Northern saw-whet owl**
 
-```{r}
+
+```r
 SawwhetOwl1 <- matrix(c(15,0,13,6), 
                       nrow = 2, 
                       dimnames = list("Current" = c("Within", "Outside"), "Projected" = c("Within", "Outside")))
 print(SawwhetOwl1)
+```
+
+```
+##          Projected
+## Current   Within Outside
+##   Within      15      13
+##   Outside      0       6
+```
+
+```r
 mcnemar.test(SawwhetOwl1)
+```
+
+```
+## 
+## 	McNemar's Chi-squared test with continuity correction
+## 
+## data:  SawwhetOwl1
+## McNemar's chi-squared = 11.077, df = 1, p-value = 0.0008741
 ```
 
 4. **Long Eared Owl**
 
-```{r}
+
+```r
 LongEaredOwl1 <- matrix(c(12,0,6,5),
                         nrow = 2,
                         dimnames = list("Current" = c("Within", "Outside"), "Projected" = c("Within", "Outside")))
 print(LongEaredOwl1)
+```
+
+```
+##          Projected
+## Current   Within Outside
+##   Within      12       6
+##   Outside      0       5
+```
+
+```r
 mcnemar.test(LongEaredOwl1)
+```
+
+```
+## 
+## 	McNemar's Chi-squared test with continuity correction
+## 
+## data:  LongEaredOwl1
+## McNemar's chi-squared = 4.1667, df = 1, p-value = 0.04123
 ```
 
 5. **Great Horned Owl**
 
-```{r}
+
+```r
 GreatHornedOwl1 <- matrix(c(133,0,5,10), 
                           nrow = 2,
                           dimnames = list("Current" = c("Within", "Outside"), "Projected" = c("Within", "Outside")))
 print(GreatHornedOwl1)
+```
+
+```
+##          Projected
+## Current   Within Outside
+##   Within     133       5
+##   Outside      0      10
+```
+
+```r
 mcnemar.test(GreatHornedOwl1)
+```
+
+```
+## 
+## 	McNemar's Chi-squared test with continuity correction
+## 
+## data:  GreatHornedOwl1
+## McNemar's chi-squared = 3.2, df = 1, p-value = 0.07364
 ```
 
 6. **Western Screech Owl**
 
-```{r}
+
+```r
 WesternScreech1 <- matrix(c(31,42,0,64),
                           nrow = 2,
                           dimnames = list("Current" = c("Within", "Outside"), "Projected" = c("Within", "Outside")))
 print(WesternScreech1)
+```
+
+```
+##          Projected
+## Current   Within Outside
+##   Within      31       0
+##   Outside     42      64
+```
+
+```r
 mcnemar.test(WesternScreech1)
+```
+
+```
+## 
+## 	McNemar's Chi-squared test with continuity correction
+## 
+## data:  WesternScreech1
+## McNemar's chi-squared = 40.024, df = 1, p-value = 2.509e-10
 ```
 
 7. **Whiskered Screech Owl**
 
-```{r}
+
+```r
 Whiskered1 <- matrix(c(6,0,106,0),
                      nrow=2,
                      dimnames = list("Current" = c("Within", "Outside"), "Projected" = c("Within", "Outside")))
 print(Whiskered1)
+```
+
+```
+##          Projected
+## Current   Within Outside
+##   Within       6     106
+##   Outside      0       0
+```
+
+```r
 mcnemar.test(Whiskered1)
+```
+
+```
+## 
+## 	McNemar's Chi-squared test with continuity correction
+## 
+## data:  Whiskered1
+## McNemar's chi-squared = 104.01, df = 1, p-value < 2.2e-16
 ```
 8. **Northern Pygmy-Owl**
 
-```{r}
+
+```r
 Pygmy1 <- matrix(c(37,33,0,1),
                      nrow=2,
                      dimnames = list("Current" = c("Within", "Outside"), "Projected" = c("Within", "Outside")))
 print(Pygmy1)
+```
+
+```
+##          Projected
+## Current   Within Outside
+##   Within      37       0
+##   Outside     33       1
+```
+
+```r
 mcnemar.test(Pygmy1)
+```
+
+```
+## 
+## 	McNemar's Chi-squared test with continuity correction
+## 
+## data:  Pygmy1
+## McNemar's chi-squared = 31.03, df = 1, p-value = 2.54e-08
 ```
 
 
