@@ -3,7 +3,7 @@ title: "McNemar Tests"
 author: "Jean-Luc Cartron, Matthieu Cartron, Hunter Thompson"
 date: "2023-11-25"
 output: 
-  html_document:
+  rmarkdown::github_document:
     toc: true
     toc_depth: 3
     toc_float: true
