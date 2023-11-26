@@ -31,4 +31,4 @@ The Owl Counts code was used to validate the statistics from the paper "Climate 
 * Run the program and record the results
 
 ### Z-tests (results)
-* One-sided Z-tests were performed to test whether the habitat model performed better than the simulations, or random model. The simulation randomly generates points across eco regions (regions in which a given owl species **could** be found) relevant to the given owl species. The link to the Z-tests can be found here: [Z-tests for each owl species](https://github.com/mcartron10/Owl-Research/blob/main/Model_Validation_Z_tests.md)  
+* One-sided Z-tests were performed to test whether the habitat model performed better than the simulations, or random model. The simulation randomly generates points across eco regions (regions in which a given owl species **could** be found) relevant for the given owl species. The link to the Z-tests can be found here: [Z-tests for each owl species](https://github.com/mcartron10/Owl-Research/blob/main/Model_Validation_Z_tests.md)  
