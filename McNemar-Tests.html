@@ -1851,14 +1851,14 @@ print(Whiskered1)</code></pre>
 <ol start="8" style="list-style-type: decimal">
 <li><strong>Northern Pygmy-Owl</strong></li>
 </ol>
-<pre class="r"><code>Pygmy1 &lt;- matrix(c(37,33,0,1),
+<pre class="r"><code>Pygmy1 &lt;- matrix(c(37,0,33,1),
                      nrow=2,
                      dimnames = list(&quot;Current&quot; = c(&quot;Within&quot;, &quot;Outside&quot;), &quot;Projected&quot; = c(&quot;Within&quot;, &quot;Outside&quot;)))
 print(Pygmy1)</code></pre>
 <pre><code>##          Projected
 ## Current   Within Outside
-##   Within      37       0
-##   Outside     33       1</code></pre>
+##   Within      37      33
+##   Outside      0       1</code></pre>
 <pre class="r"><code>mcnemar.test(Pygmy1)</code></pre>
 <pre><code>## 
 ##  McNemar&#39;s Chi-squared test with continuity correction

@@ -186,7 +186,7 @@ mcnemar.test(Whiskered1)
 8. **Northern Pygmy-Owl**
 
 ```{r}
-Pygmy1 <- matrix(c(37,33,0,1),
+Pygmy1 <- matrix(c(37,0,33,1),
                      nrow=2,
                      dimnames = list("Current" = c("Within", "Outside"), "Projected" = c("Within", "Outside")))
 print(Pygmy1)

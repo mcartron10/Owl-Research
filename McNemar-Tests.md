@@ -317,7 +317,7 @@ mcnemar.test(Whiskered1)
 
 
 ```r
-Pygmy1 <- matrix(c(37,33,0,1),
+Pygmy1 <- matrix(c(37,0,33,1),
                      nrow=2,
                      dimnames = list("Current" = c("Within", "Outside"), "Projected" = c("Within", "Outside")))
 print(Pygmy1)
@@ -326,8 +326,8 @@ print(Pygmy1)
 ```
 ##          Projected
 ## Current   Within Outside
-##   Within      37       0
-##   Outside     33       1
+##   Within      37      33
+##   Outside      0       1
 ```
 
 ```r
