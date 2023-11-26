@@ -3,7 +3,7 @@ import time
 import arcpy
 from sys import argv
 import numpy as np
-Num_Owls = 'SampleInteger' # Insert number of samples for simulation. Used in CalculateRandomIntersection() function argument
+Num_Owls = k # Insert k number of counts (owl observations) for simulation. Used in CalculateRandomIntersection() function argument
 
 # Habitat_Values argument of CalculateRandomIntersection() function takes ERU habitat codes: e.g. SFF, or Spruce-fir Forest, etc . . .  
 
