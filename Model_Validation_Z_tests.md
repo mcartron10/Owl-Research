@@ -220,7 +220,7 @@ prop.test(248, 291, p = FO_mean_prop, alternative = c("greater"), conf.level = 0
     ##         p 
     ## 0.8522337
 
-8.  Greated horned Owl
+8.  **Greated horned owl**
 
 ``` r
 GHO_mean_prop <- (mean(GHO_intersections)/148) - 1e-10
