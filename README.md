@@ -1,6 +1,6 @@
 # Owl Research
 
-## McNemar Tests
+## McNemar's Tests
 McNemar's tests for paired, binary response data used to test the null hypothesis that the proportion of records or detection points within vs. outside 2017 mapped modeled habitat does not differ between current and projected climate-induced conditions. The link to these tests can be found here: [McNemar's tests](https://github.com/mcartron10/Owl-Research/blob/main/McNemar-Tests.md)
 
 ## Model Validation
