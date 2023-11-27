@@ -1,5 +1,5 @@
 ---
-title: "McNemar Tests"
+title: "McNemar's Tests"
 author: "Jean-Luc Cartron, Matthieu Cartron, Hunter Thompson"
 date: "2023-11-25"
 output: github_document
@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-## Codes for McNemar tests
+## Codes for McNemar's tests
 
 - cw = within habitat/buffer under current conditions; co = outside habitat/buffer under current conditions; pw = within habitat/buffer under projected future conditions; po – outside habitat/buffer under projected future conditions
 
@@ -25,11 +25,11 @@ mcnemar.test(OwlSpecies)
 
 ```
 
-## Data and specific codes, McNemar test of paired proportions (2 groups)
+## Data and specific codes, McNemar's test of paired proportions (2 groups)
 
 
 
-### McNemar tests with the buffer:
+### McNemar's tests with the buffer:
   
 
 1. **Flammulated Owl** 
@@ -189,7 +189,7 @@ mcnemar.test(Pygmy1)
 ```
 
 
-### Results of McNemar tests without the buffer
+### Results of McNemar's tests without the buffer
 
 - Computed just as the above tests, though with different matrix values. 
 

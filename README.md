@@ -1,7 +1,7 @@
 # Owl Research
 
 ## McNemar Tests
-[McNemar tests](https://github.com/mcartron10/Owl-Research/blob/main/McNemar-Tests.md)
+McNemar's tests for paired, binary response data used to test the null hypothesis that the proportion of records or detection points within vs. outside 2017 mapped modeled habitat does not differ between current and projected climate-induced conditions. The link to these tests can be found here: [McNemar's tests](https://github.com/mcartron10/Owl-Research/blob/main/McNemar-Tests.md)
 
 ## Model Validation
 
@@ -31,5 +31,5 @@ The Owl Counts code was used to validate the statistics from the paper "Climate 
 * Ensure the write file, and the Workspace/Geodatabase are pathed correctly.
 * Run the program and record the results
 
-### Z-tests (results)
+### One Sample Proportion Z-tests (results)
 * One-sided Z-tests were performed to test whether the habitat model performed better than the simulations, or random model. The simulation randomly generates points across eco regions (regions in which a given owl species **could** be found) relevant for the given owl species. The link to the Z-tests can be found here: [Z-tests for each owl species](https://github.com/mcartron10/Owl-Research/blob/main/Model_Validation_Z_tests.md)  
